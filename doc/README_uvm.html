@@ -1,0 +1,89 @@
+<p><em>Please read this <strong>entire</strong> document <strong>before</strong> installing.</em></p>
+
+<h1>License</h1>
+
+<p>These VIM scripts/add-ons are part of David Black's work environment, and are
+licensed free for use by others under Apache 2.0 license. They augment
+SystemVerilog and UVM development.</p>
+
+<hr>
+
+<p>Copyright (C) 2015 David C Black</p>
+
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License.  You may obtain a copy of the
+License at</p>
+
+<p>http://www.apache.org/licenses/LICENSE-2.0</p>
+
+<p>Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied.  See the License for the</p>
+
+<h2>specific language governing permissions and limitations under the License.</h2>
+
+<h1>Archive contents</h1>
+
+<ul>
+<li>doc/README_uvm.html   -- this file                                   </li>
+<li>syntax/sv.vim         -- SystemVerilog &amp; UVM highlighting            </li>
+<li>syntax/log.vim        -- logfile highlighting (e.g. errors in red)   </li>
+<li>etc/colors.vim        -- used by syntax files                        </li>
+<li>etc/sv.dict           -- used by SystemVerilog highlighting          </li>
+<li>ftdetect/sv.vim       -- specifies filename extensions to which this applies</li>
+</ul>
+
+<h1>Installation</h1>
+
+<p><strong>IMPORTANT:</strong> Requires <em>Vim version <strong>7.0</strong> or better</em>, which may be obtained from
+<a href="http:://www.vim.org"><strong>VIm.org</strong></a></p>
+
+<p>The following apply to Linux/UNIX installations. Please adjust yourself if using
+Windows.</p>
+
+<p>To install as-is from the "vimball" with VIM or GVIM, simply open in the editor
+and type:</p>
+
+<pre><code>:source %
+</code></pre>
+
+<p>To learn more about vimball, use the vim command:</p>
+
+<pre><code>:help vimball
+</code></pre>
+
+<p>Alternately, if you get the files in a tarball, be sure to install them under
+your vim person initialization directory. Per vim help:</p>
+
+<p>Places for your personal initializations:</p>
+
+<pre><code>Linux/OS-X: $HOME/.vimrc or $HOME/.vim/vimrc
+MS-Windows: $HOME/_vimrc, $HOME/vimfiles/vimrc or $VIM/_vimrc
+</code></pre>
+
+<p>RECOMMENDATION: Put all your Vim configuration stuff in the
+  $HOME/.vim/ directory ($HOME/vimfiles/ for MS-Windows). That makes it
+  easy to copy it to another system.</p>
+
+<p>The files are searched in the order specified above and only the first
+  one that is found is read.</p>
+
+<p>To install from GitHub, clone/update and then either make a vimball or follow
+non-vimball approach above. YMMV</p>
+
+<p><strong>NOTE:</strong> If syntax coloring does not take effect when you open a file, it is
+because a mapping to the new <code>sv</code> syntax file may be missing. You may need to
+edit your $VIMHOME/filetype.vim or $VIMHOME/scripts.vim file to recognize your
+file. Alternately, you can enter a comment line of the format:
+/<em>vim: syntax=sv</em>/ as the the last line of your file, or manually issue the vim
+command:</p>
+
+<pre><code>:set syntax=sv
+</code></pre>
+
+<p>whenever you edit a systemverilog file.</p>
+
+<hr>
+
+<p>The end 
+vim:syntax=markdown</p>

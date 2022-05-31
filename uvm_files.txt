@@ -1,0 +1,7 @@
+doc/README_uvm.html
+syntax/sv.vim
+syntax/log.vim
+etc/colors.vim
+etc/sv.dict
+indent/sv.vim
+ftdetect/sv.vim
