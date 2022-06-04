@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *Please read this **entire** document **before** installing.*
 
 ### License
@@ -79,7 +78,3 @@ whenever you edit a systemverilog file.
 The end 
 
 vim:syntax=markdown
-=======
-# Vim
-Vim config files for SV/UVM
->>>>>>> ac4cee6096dc808023f9df7b01e9920e2e3396b5
