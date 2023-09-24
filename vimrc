@@ -230,3 +230,12 @@ set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 " Show the status on the second to last line.
 set laststatus=2
 " }}}
+"highlight all matching wordsor charecters
+se hls
+
+"Ignore ctrl+m (^M) charecter while coping from win to linux
+set noendofline binary
+
+"Set the maximum number of tabs you can open simuotaneously
+set tabpagemax=99
+
